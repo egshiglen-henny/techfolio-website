@@ -1,0 +1,315 @@
+/* GLOBAL SECTION SPACING & UTILITIES: Declaring utility classes and spacing for layout sections (used on all pages like home.php, contact.php, create.php, etc.) */
+section { /* Applying vertical padding to section elements */
+    padding-top: 20px; /* Setting top padding to 20px */
+    padding-bottom: 20px; /* Setting bottom padding to 20px */
+}
+
+.text-purple { /* Used to color important text elements purple (e.g., headings in home.php, register.php) */
+    color: #944fde; /* Setting purple color for text */
+}
+
+.border-purple { /* Used for input borders and card outlines (e.g., register.php, create.php) */
+    border-color: #944fde; /* Applying purple border color */
+}
+
+.bg-purple {  /* Background color for major components (e.g., footer, some buttons in all pages) */
+    background-color: #5c3f8d; /* Defining background color as dark purple */
+}
+
+.bg-light-purple { /* Light background for subtle sections (e.g., contact.php, form areas) */
+    background-color: #e9d9fd; /* Defining background color as light purple */
+}
+
+/* NAVBAR: Styling for the main navigation bar (used on all pages like home.php, contact.php, login.php, register.php) */
+.gradient-navbar { 
+    background: linear-gradient(135deg, #8756e6, #42a6f7); /* Creating gradient background for navbar */
+}
+
+/* HERO SECTIONS: Styling for full-width attention-grabbing hero banners (home.php and contact.php)*/
+.hero-section.home-hero { /* Styling hero section on the homepage */
+    background: url('background.jpeg') no-repeat center center / cover; /* Applying background image with no repeat and cover size */
+    min-height: 50vh; /* Setting minimum height to 50% viewport */
+    display: flex; /* Using flex layout */
+    align-items: center; /* Aligning items vertically */
+    color: white; /* Setting text color to white */
+}
+/* Used in contact.php */
+.contact-hero { /* Styling hero section for the contact page */
+    background: linear-gradient(135deg, #8756e6, #42a6f7); /* Adding gradient background */
+    min-height: 60vh; /* Setting taller height than homepage hero */
+    display: flex; /* Applying flexbox layout */
+    align-items: center; /* Vertically centering content */
+}
+
+/* FEATURE & BENEFIT SECTIONS: Styling for showcasing features and benefits of the site (home.php)*/
+.feature-section { 
+    background-color: #f8f5ff; /* Adding background to the feature section */
+}
+
+.feature-img { /* Controlling the appearance of feature images */
+    max-height: 160px; /* Setting maximum height */
+    object-fit: cover; /* Ensuring images cover their container */
+    width: 100%; /* Allowing image to scale full width */
+    max-width: 280px; /* Restricting maximum width */
+}
+
+.benefits-section { /* Used to wrap benefits (home.php) */
+    background-color: #f0eaff; /* Adding background color for benefits section */
+}
+
+/* FORM SECTIONS: Styling for forms like contact and registration */
+.contact-form-section { 
+    background-color: #f5ecfa;/* Styling background of contact form section */
+}
+
+/* BUTTONS: Base styles and hover effects for buttons */
+.btn-primary { /* Setting base styling for primary buttons */
+    background-color: #944fde; /* Purple background */
+    border-color: #944fde; /* Purple border */
+}
+
+.btn-primary:hover { /* Styling hover state for primary buttons */
+    background-color: #5c3f8d; /* Darker purple on hover */
+    border-color: #5c3f8d; /* Matching border color on hover */
+}
+
+/* CUSTOM LAYOUT & ANIMATION: Custom animations like scaling effects */
+.hover-scale:hover { /* Adding scale animation on hover */
+    transform: scale(1.03); /* Scaling element up slightly */
+    transition: transform 0.3s ease; /* Smoothing animation */
+}
+
+/* CREATE PAGE - LAYOUT SECTION: Styling for the layout selection cards on create page */
+.choose-layout .card { /* Defining layout for layout selection cards */
+    height: 100%; /* Full height */
+    display: flex; /* Using flexbox */
+    flex-direction: column; /* Stacking child items vertically */
+    justify-content: space-between; /* Distributing space between elements */
+}
+
+/* CREATE PAGE - VIDEO SECTION: Styling for video and learning tips area */
+.custom-section { /* Styling section that includes a video */
+    background-color: #af4df12f; /* Light translucent purple background */
+}
+
+.custom-section .row { 
+    justify-content: center;/* Centering row contents */
+}
+
+.custom-section .col-md-6 { 
+    max-width: 800px;/* Restricting maximum width of columns */
+}
+
+.custom-section ul li::before { /* Styling bullet points */
+    margin-right: 6px; /* Adding space between bullet and text */
+    color: #5c3f8d; /* Purple color for bullet */
+}
+
+/* TEMPLATES PAGE: Styling for templates gallery and sorting filters */
+.filter-sort { /* Styling template filter and sort bar */
+    background-color: #9910f520; /* Very light purple background */
+    padding: 40px 20px; /* Adding spacing */
+    text-align: center; /* Centering text */
+}
+
+template-gallery { /* Styling gallery for displaying templates */
+    background-color: #f0eaff; /* Light background */
+    padding: 60px 20px; /* Spacing around gallery */
+}
+
+/* PRICING PAGE: Styling for pricing plan cards and section */
+.pricing-section { /* Styling background and padding for pricing */
+    background-color: #f8f5ff; /* Styling background */
+    padding: 60px 20px; /*Styling padding for pricing */
+}
+
+.pricing-card:hover { /* Animating pricing card hover effect */
+    transform: translateY(-5px); /* Lifting card up */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.pricing-card ul li::before { /* Styling bullet points for features */
+    content: "✔"; /* Checkmark symbol */
+    color: #5c3f8d; /* Purple checkmark */
+    margin-right: 10px; /* Spacing */
+}
+
+/* BLOG SECTION: Styling for blog previews and post links */
+.blog { /* Styling each blog container */
+    background: #faf3ff; /* Very light purple background */
+    padding: 20px; /* Inner spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    height: 100%; /* Full height */
+}
+
+.blog img { /* Styling images inside blog posts */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded edges */
+    margin-bottom: 10px; /* Spacing below image */
+}
+
+.blog a { /* Styling blog links */
+    display: block; /* Full width clickable block */
+    font-size: 16px; /* Readable font size */
+    color: #5c3f8d; /* Purple color */
+    font-weight: 500; /* Slightly bold */
+    text-decoration: none; /* Removing underline */
+}
+
+.blog a:hover { /* Styling link hover */
+    text-decoration: underline; /* Underline on hover */
+    color: #944fde; /* Lighter purple hover color */
+}
+
+/* Used in contact.php form */
+.emoji-captcha-selected { /* Styling selected emoji CAPTCHA */
+    background-color: #e9d9fd; /* Light purple */
+    border-color: #944fde; /* Purple border */
+}
+
+body { 
+    background-color: #f8f9fa;/* Setting default body background */
+}
+
+/* Used on confirmation pages, settings.php, success screens */
+.soft-card { /* Styling reusable card layout */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* Soft shadow */
+    padding: 20px; /* Internal spacing */
+    background: white; /* White background */
+}
+
+.sidebar { /* Styling sidebar navigation */
+    height: 160vh; /* Tall sidebar */
+    background: linear-gradient(135deg, #8756e6, #42a6f7); /* Gradient background */
+    padding-top: 30px; /* Top spacing */
+    color: white; /* White text */
+}
+
+.sidebar a { /* Styling sidebar links */
+    color: white; /* White link color */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display */
+    padding: 12px 20px; /* Internal padding */
+    border-radius: 12px; /* Rounded edges */
+    margin-bottom: 10px; /* Spacing between links */
+}
+
+.sidebar a:hover { /* Styling sidebar link hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter background */
+}
+
+.dashboard-header h2 { /* Styling dashboard title */
+    font-weight: 700; /* Bold title */
+    font-size: 2rem; /* Large font size */
+}
+
+.dashboard-tile { /* Styling dashboard tiles */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside tile */
+    background: #f9f4ff; /* Light background */
+    box-shadow: 0 0 10px rgba(0,0,0,0.04); /* Subtle shadow */
+    transition: transform 0.2s ease; /* Smooth hover animation */
+}
+
+.dashboard-tile:hover { /* Hover effect for dashboard tile */
+    transform: translateY(-4px); /* Lifting tile */
+}
+
+.user-card { /* Styling user information card */
+    background: white; /* White background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Padding inside card */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Soft shadow */
+}
+
+.user-card h5 { /* Styling section heading */
+    margin-bottom: 15px; /* Spacing below heading */
+}
+
+.btn-primary,
+.btn-outline-primary,
+.btn-outline-secondary { /* Styling all button variations */
+    background-color: #944fde; /* Base background */
+    border-color: #944fde; /* Border color */
+    color: white; /* Text color */
+}
+
+.btn-primary:hover, /* Styling hover for btn-primary button */
+.btn-outline-primary:hover,/* Styling hover for btn-outline-primary button */
+.btn-outline-secondary:hover { /* Styling hover for btn-outline-secondary button */
+    background-color: #5c3f8d; /* Darker hover background */
+    border-color: #5c3f8d; /* Darker hover border */
+    color: white; /* Text stays white */
+}
+
+body.dark-mode { /* Styling body in dark mode */
+    background-color: #1a1a1a; /* Dark background */
+    color: #f5f5f5; /* Light text */
+}
+
+.dark-mode .navbar,/* Styling dark background navbar */
+.dark-mode .footer, /* Styling dark background footer */
+.dark-mode .soft-card { /* Styling dark background soft-card */
+    background-color: #2b2b2b !important; /* Enforcing dark background */
+    color: #f5f5f5 !important; /* Enforcing light text */
+}
+
+.dark-mode a, /* Styling links in dark mode */
+.dark-mode .text-purple { /* Styling links in dark mode text*/
+    color: #c79fff !important; /* Soft purple color */
+}
+
+.dark-mode .btn-primary { /* Primary button background in dark mode */
+    background-color: #944fde; /* Matching standard theme */
+    border-color: #944fde; /* Matching standard theme */
+}
+
+.dark-mode .btn-primary:hover { /* Hover for primary button in dark mode */
+    background-color: #5c3f8d; /* Darker hover */
+}
+
+.dark-mode .dashboard-tile,
+.dark-mode .user-card,
+.dark-mode .soft-card { /* Background for cards in dark mode */
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.dark-mode .dashboard-tile, /* Used in main.php and admin.php to style dashboard tiles in dark mode */
+.dark-mode .user-card,        /* Used in main.php to style user profile card in dark mode */
+.dark-mode .soft-card {       /* Used in settings.php, confirm_email.php, and others for reusable card styling */
+    background-color: #2c2c2c;  /* Setting dark background for all card types */
+    color: #ffffff;             /* Setting white text color for contrast */
+}
+
+.dark-mode .progress { /* Styling background of progress bar */
+    background-color: #444; /* Dark gray background used in main.php (dashboard) progress bar track */
+}
+
+.dark-mode .progress-bar { /* Styling fill color of progress bar */
+    background-color: #a974f8; /* Violet fill showing user's progress on main.php */
+}
+
+.cookie-banner { /* Styling the fixed cookie consent banner */
+    position: fixed; /* Keeping banner fixed at the bottom of viewport */
+    bottom: 0; /* Anchoring to bottom of screen */
+    width: 100%; /* Stretching across full screen width */
+    background: #5c3f8d; /* Purple background */
+    color: white; /* White text */
+    padding: 15px; /* Padding inside banner */
+    text-align: center; /* Centering text */
+    z-index: 999; /* Ensuring it stays on top */
+}
+
+.cookie-banner button { /* Styling consent banner button */
+    margin-left: 10px; /* Spacing from text */
+    background: #fff; /* White background */
+    color: #5c3f8d; /* Purple text */
+    border: none; /* Removing border */
+    padding: 8px 16px; /* Adding padding */
+    border-radius: 6px; /* Rounding button corners */
+    cursor: pointer; /* Indicating button */
+}
