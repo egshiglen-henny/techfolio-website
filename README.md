@@ -46,14 +46,22 @@ Developed as part of my Web Development project, TechFolio blends simplicity, in
    http://localhost/techfolio-website/home.php
 
 ---
-
 ## 📸 Screenshots
 
-### 🏠 Homepage
+### 🏠 Homepage  
+![Homepage Screenshot](./docs/screenshot-home-page.png)
 
-### 🎨 Template Gallery
+### 🎨 Template Gallery  
+![Template Gallery Screenshot](./docs/screenshot-template-page.png)
 
-### ⚙️ Admin Dashboard
+### ✍️ Create Portfolio Page  
+![Create Page Screenshot](./docs/screenshot-create-page.png)
+
+### 💰 Pricing Plans  
+![Pricing Plans Screenshot](./docs/screenshot-pricing-plans.png)
+
+### 📞 Contact Page  
+![Contact Page Screenshot](./docs/screenshot-contact-page.png)
 
 ---
 
